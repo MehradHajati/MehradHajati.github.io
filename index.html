@@ -7,20 +7,218 @@
 </head>
 
 <body>
-    <div clas="hero">
+    <div class="hero">
         <div class="btn-box">
-            <button><i class="fa-solid fa-house"></i>Home</button>
-            <button><i class="fa-solid fa-children"></i></i>Family</button>
-            <button><i class="fa-solid fa-school"></i>Education</button>
-            <button><i class="fa-solid fa-dumbbell"></i>Physical Activities</button>
-            <button><i class="fa-solid fa-code"></i>Coding Projects</button>
-            <button><i class="fa-solid fa-briefcase"></i>Work Experience</button>
+            <button id="btn1" onclick="openHome()"><i class="fa-solid fa-house"></i>Home</button>
+            <button id="btn2" onclick="openFamily()"><i class="fa-solid fa-children"></i></i>Family</button>
+            <button id="btn3" onclick="openEducation()"><i class="fa-solid fa-school"></i>Education</button>
+            <button id="btn4" onclick="openPhysical()"><i class="fa-solid fa-dumbbell"></i>Physical Activities</button>
+            <button id="btn5" onclick="openCoding()"><i class="fa-solid fa-code"></i>Coding Projects</button>
+            <button id="btn6" onclick="openWork()"><i class="fa-solid fa-briefcase"></i>Work Experience</button>
         </div>
-    </div>
-<h1>Introduction</h1>
-<p>Hello, my name is Mehrad Hajati. I was born and raised in Iran, Tehran. When I was fifteen years old I travelled to the Netherlands to get my International Baccalaureate (IB), leaving my family and friends behind.</p>
-<p> After I completed my IB diploma, I travelled to Canada for my undergrad at Mount Allison University in Sackville New Brunswick. </p>
-<img src="pictures/headshot.jpg" alt="Headshot of Mehrad Hajati">
+
+        <div id="home" class="content">
+            <div class="content-left">
+                <h1>Introduction</h1>
+                <p>Hello, my name is Mehrad Hajati. I was born and raised in Iran, Tehran. When I was fifteen years old I travelled to the Netherlands to get my International Baccalaureate (IB), leaving my family and friends behind.
+                After I completed my IB diploma, I travelled to Canada for my undergrad studies at Mount Allison University in Sackville, New Brunswick. </p>
+            </div>
+            <div class="content-right">
+                <img src="pictures/headshot.jpg" alt="Headshot of Mehrad Hajati">
+            </div>
+        </div>
+
+        <div id="family" class="content">
+            <div class="content-left">
+                <h1>Family</h1>
+                <p>this is the family tab </p>
+            </div>
+            <div class="content-right">
+            </div>
+        </div>
+
+        <div id="education" class="content">
+            <div class="content-left">
+                <h1>Education</h1>
+                <p>this is the education tab </p>
+            </div>
+            <div class="content-right">
+            </div>
+        </div>
+
+        <div id="physical" class="content">
+            <div class="content-left">
+                <h1>physical</h1>
+                <p>this is the physical tab </p>
+            </div>
+            <div class="content-right">
+            </div>
+        </div>
+
+        <div id="coding" class="content">
+            <div class="content-left">
+                <h1>coding</h1>
+                <p>this is the coding tab </p>
+            </div>
+            <div class="content-right">
+            </div>
+        </div>
+
+        <div id="work" class="content">
+            <div class="content-left">
+                <h1>work</h1>
+                <p>this is the work tab </p>
+            </div>
+            <div class="content-right">
+            </div>
+        </div>
+        
+    </div> 
+
+        <script>
+        var home = document.getElementById("home");
+        var family = document.getElementById("family");
+        var education = document.getElementById("education");
+        var physical = document.getElementById("physical");
+        var coding = document.getElementById("coding");
+        var work = document.getElementById("work");
+
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var btn4 = document.getElementById("btn4");
+        var btn5 = document.getElementById("btn5");
+        var btn6 = document.getElementById("btn6");
+
+        function openHome(){
+            home.style.transform = "translateX(0)";
+            family.style.transform = "translateX(10000%)";
+            education.style.transform = "translateX(10000%)";
+            physical.style.transform = "translateX(10000%)";
+            coding.style.transform = "translateX(10000%)";
+            work.style.transform = "translateX(10000%)";
+            btn1.style.color = "#ff7846";
+            btn2.style.color = "#000";
+            btn3.style.color = "#000";
+            btn4.style.color = "#000";
+            btn5.style.color = "#000";
+            btn6.style.color = "#000";
+            home.style.transitionDelay = "0.2s";
+            family.style.transitionDelay = "0s";
+            education.style.transitionDelay = "0s";
+            physical.style.transitionDelay = "0s";
+            coding.style.transitionDelay = "0s";
+            work.style.transitionDelay = "0s";
+        }
+
+        function openFamily(){
+            home.style.transform = "translateX(10000%)";
+            family.style.transform = "translateX(0)";
+            education.style.transform = "translateX(10000%)";
+            physical.style.transform = "translateX(10000%)";
+            coding.style.transform = "translateX(10000%)";
+            work.style.transform = "translateX(10000%)";
+            btn1.style.color = "#000";
+            btn2.style.color = "#ff7846";
+            btn3.style.color = "#000";
+            btn4.style.color = "#000";
+            btn5.style.color = "#000";
+            btn6.style.color = "#000";
+            home.style.transitionDelay = "0s";
+            family.style.transitionDelay = "0.2s";
+            education.style.transitionDelay = "0s";
+            physical.style.transitionDelay = "0s";
+            coding.style.transitionDelay = "0s";
+            work.style.transitionDelay = "0s";
+        }
+
+        function openEducation(){
+            home.style.transform = "translateX(10000%)";
+            family.style.transform = "translateX(10000%)";
+            education.style.transform = "translateX(0)";
+            physical.style.transform = "translateX(10000%)";
+            coding.style.transform = "translateX(10000%)";
+            work.style.transform = "translateX(10000%)";
+            btn1.style.color = "#000";
+            btn2.style.color = "#000";
+            btn3.style.color = "#ff7846";
+            btn4.style.color = "#000";
+            btn5.style.color = "#000";
+            btn6.style.color = "#000";
+            home.style.transitionDelay = "0s";
+            family.style.transitionDelay = "0s";
+            education.style.transitionDelay = "0.2s";
+            physical.style.transitionDelay = "0s";
+            coding.style.transitionDelay = "0s";
+            work.style.transitionDelay = "0s";
+        }
+
+        function openPhysical(){
+            home.style.transform = "translateX(10000%)";
+            family.style.transform = "translateX(10000%)";
+            education.style.transform = "translateX(10000%)";
+            physical.style.transform = "translateX(0)";
+            coding.style.transform = "translateX(10000%)";
+            work.style.transform = "translateX(10000%)";
+            btn1.style.color = "#000";
+            btn2.style.color = "#000";
+            btn3.style.color = "#000";
+            btn4.style.color = "#ff7846";
+            btn5.style.color = "#000";
+            btn6.style.color = "#000";
+            home.style.transitionDelay = "0s";
+            family.style.transitionDelay = "0s";
+            education.style.transitionDelay = "0s";
+            physical.style.transitionDelay = "0.2s";
+            coding.style.transitionDelay = "0s";
+            work.style.transitionDelay = "0s";
+        }
+
+        function openCoding(){
+            home.style.transform = "translateX(10000%)";
+            family.style.transform = "translateX(10000%)";
+            education.style.transform = "translateX(10000%)";
+            physical.style.transform = "translateX(10000%)";
+            coding.style.transform = "translateX(0)";
+            work.style.transform = "translateX(10000%)";
+            btn1.style.color = "#000";
+            btn2.style.color = "#000";
+            btn3.style.color = "#000";
+            btn4.style.color = "#000";
+            btn5.style.color = "#ff7846";
+            btn6.style.color = "#000";
+            home.style.transitionDelay = "0s";
+            family.style.transitionDelay = "0s";
+            education.style.transitionDelay = "0s";
+            physical.style.transitionDelay = "0s";
+            coding.style.transitionDelay = "0.2s";
+            work.style.transitionDelay = "0s";
+        }
+
+        function openWork(){
+            home.style.transform = "translateX(10000%)";
+            family.style.transform = "translateX(10000%)";
+            education.style.transform = "translateX(10000%)";
+            physical.style.transform = "translateX(10000%)";
+            coding.style.transform = "translateX(10000%)";
+            work.style.transform = "translateX(0)";
+            btn1.style.color = "#000";
+            btn2.style.color = "#000";
+            btn3.style.color = "#000";
+            btn4.style.color = "#000";
+            btn5.style.color = "#000";
+            btn6.style.color = "#ff7846";
+            home.style.transitionDelay = "0s";
+            family.style.transitionDelay = "0s";
+            education.style.transitionDelay = "0s";
+            physical.style.transitionDelay = "0s";
+            coding.style.transitionDelay = "0s";
+            work.style.transitionDelay = "0.2s";
+        }
+    </script>
+
+
+
 </body>
 </html>
 
