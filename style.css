@@ -18,7 +18,6 @@
 }
 
 .btn-box button{
-    background:turquoise;
     border: none;
     outline: none;
     cursor: pointer;
@@ -68,6 +67,10 @@
     background-color: #ff7846;
     color: #fff;
     text-align: center;
+}
+
+.content-left hr{
+    margin: 5px;
 }
 
 .content-right{
