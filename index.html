@@ -1,82 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js" defer></script>
+    <title>Mehrad Hajati</title>
 </head>
 
 <body>
-    <div class="hero">
-        <div class="btn-box">
-            <button id="btn1" onclick="openHome()"><i class="fa-solid fa-house"></i>Home</button>
-            <button id="btn2" onclick="openFamily()"><i class="fa-solid fa-children"></i></i>Family</button>
-            <button id="btn3" onclick="openEducation()"><i class="fa-solid fa-school"></i>Education</button>
-            <button id="btn4" onclick="openPhysical()"><i class="fa-solid fa-dumbbell"></i>Physical Activities</button>
-            <button id="btn5" onclick="openCoding()"><i class="fa-solid fa-code"></i>Coding Projects</button>
-            <button id="btn6" onclick="openWork()"><i class="fa-solid fa-briefcase"></i>Work Experience</button>
-        </div>
 
-        <div id="home" class="content">
+    <ul class="tabs">
+        <li data-tab-target="#home" class="active tab"><i class="fa-solid fa-house"></i>Home</li>
+        <li data-tab-target="#family" class="tab"><i class="fa-solid fa-children"></i>Family</li>
+        <li data-tab-target="#education" class="tab"><i class="fa-solid fa-school"></i>Education</li>
+        <li data-tab-target="#physical" class="tab"><i class="fa-solid fa-dumbbell"></i>Physical Activities</li>
+        <li data-tab-target="#coding" class="tab"><i class="fa-solid fa-code"></i>Coding Projects</li>
+        <li data-tab-target="#work" class="tab"><i class="fa-solid fa-briefcase"></i>Work Experience</li>
+    </ul>
+
+    <div class="tab-content">
+
+        <div id="home" data-tab-content class="active">
             <div class="content-left">
                 <h1>Introduction</h1>
                 <p>Hello, my name is Mehrad Hajati. I was born and raised in Iran, Tehran. When I was fifteen years old I travelled to the Netherlands to get my International Baccalaureate (IB), leaving my family and friends behind.
                 After I completed my IB diploma, I travelled to Canada for my undergrad studies at Mount Allison University in Sackville, New Brunswick. I am interested in Computer Science, Math and Physics.
-                I also enjoy going to the gym, running marathons and playing video games.</p>
+                I also enjoy going to the gym, running marathons and playing video games.
+            </p>
+            <p> Below are the links to my GitHub, Linkedin and Instagram: </p>
+            <a href="https://github.com/MehradHajati"> GitHub</a>
+            <a href="https://www.linkedin.com/in/mehrad-hajati-7abb26273/"> Linkedin</a>
+            <a href="https://www.instagram.com/mehrad_hajati/?hl=en"> Instagram</a>
             </div>
             <div class="content-right">
                 <img src="pictures/headshot.jpg" alt="Headshot of Mehrad Hajati">
             </div>
         </div>
 
-        <div id="family" class="content">
+
+        <div id="family" data-tab-content>
             <div class="content-left">
                 <h1>Family</h1>
                 <p> The Iranian culture is very family orientated and we are taught from an early age to always be there for our family members. People will come and leave from your life, 
                     but you only have one family and are connected with them no matter the distance. I have a brother who is 7 years older than me and my mother is the sole provider in our family.
                     Growing up I learnt a lot from my grandfather who was a very passionate and disciplined man. He taught me that if you want something you need to work for it and no matter what happens no one can take away your accomplishments from you. 
-                    I carry his lessons with me and hope that he is proud of me.</p>
+                    I carry his lessons with me and hope that he is proud of me.
+                </p>
             </div>
             <div class="content-right">
                 <img src="pictures/family1.jpg" alt="My family">
             </div>
         </div>
 
-        <div id="education" class="content">
+
+        <div id="education" data-tab-content>
             <div class="content-left">
                 <h1>Education</h1>
                 <p>As I said I graduated high school with an IB diploma and then came to Mount Allison University. I am currently in my last year of undergrad and
                     will graduate from Mount Allison University with an Honours in Computer Science and a triple minor in Mathematics, Physics, and Astronomy. 
-                    I plan on pursuing a masters in Applied Computer Science, which will give me the necessary experience to become a front-end software engineer.</p>
+                    I plan on pursuing a masters in Applied Computer Science, which will give me the necessary experience to become a front-end software engineer.
+                </p>
             </div>
             <div class="content-right">
                 <img src="pictures/graduation.jpg" alt="IB Graduation">
             </div>
+
         </div>
 
-        <div id="physical" class="content">
+
+        <div id="physical" data-tab-content>
             <div class="content-left">
                 <h1>Physical Activities</h1>
                 <p>I am a strong believer in staying physically active. I go to the gym five days a week for strength training and run three times a week. I finished the Blue Nose half-marathon 
                     in 1 hour and 56 minutes in the summer of 2023 in Halifax. I plan on running the Blue Nose marathon in the summer 2024 and am currently training for it. 
-                    I can bench 225 pounds for 4 reps, can squat 315 for 2 reps, and can deadlift 365 pounds for 2 reps. </p>
+                    I can bench 225 pounds for 4 reps, can squat 315 for 2 reps, and can deadlift 365 pounds for 2 reps. 
+                </p>
             </div>
-            <div class="content-right">
+            <div  class="content-right physical">
                 <img src="pictures/marathon.jpg" alt="Blue Nose Half-Marathon">
             </div>
+
         </div>
 
-        <div id="coding" class="content">
+
+        <div id="coding" data-tab-content>
             <div class="content-left">
                 <h1>coding</h1>
                 <p>this is the coding tab </p>
             </div>
             <div class="content-right">
             </div>
+
         </div>
 
-        <div id="work" class="content">
-            <div class="content-left">
+
+        <div id="work" data-tab-content>
+            <div class="content-left work">
                 <h1>Research Assistant</h1>
                 <p>I did research with Professor Ralf Bruening at Mount Allison University during the summers of 2022 and 2023. 
                     During the first summer, my main responsibility was to solve a geometric problem between two different data sets, for which I created "JCube". 
@@ -100,152 +122,8 @@
             </div>
             <div class="content-right">
             </div>
-        </div>
         
     </div> 
-
-        <script>
-        var home = document.getElementById("home");
-        var family = document.getElementById("family");
-        var education = document.getElementById("education");
-        var physical = document.getElementById("physical");
-        var coding = document.getElementById("coding");
-        var work = document.getElementById("work");
-
-        var btn1 = document.getElementById("btn1");
-        var btn2 = document.getElementById("btn2");
-        var btn3 = document.getElementById("btn3");
-        var btn4 = document.getElementById("btn4");
-        var btn5 = document.getElementById("btn5");
-        var btn6 = document.getElementById("btn6");
-
-        function openHome(){
-            home.style.transform = "translateX(0)";
-            family.style.transform = "translateX(10000%)";
-            education.style.transform = "translateX(10000%)";
-            physical.style.transform = "translateX(10000%)";
-            coding.style.transform = "translateX(10000%)";
-            work.style.transform = "translateX(10000%)";
-            btn1.style.color = "#ff7846";
-            btn2.style.color = "#000";
-            btn3.style.color = "#000";
-            btn4.style.color = "#000";
-            btn5.style.color = "#000";
-            btn6.style.color = "#000";
-            home.style.transitionDelay = "0.2s";
-            family.style.transitionDelay = "0s";
-            education.style.transitionDelay = "0s";
-            physical.style.transitionDelay = "0s";
-            coding.style.transitionDelay = "0s";
-            work.style.transitionDelay = "0s";
-        }
-
-        function openFamily(){
-            home.style.transform = "translateX(10000%)";
-            family.style.transform = "translateX(0)";
-            education.style.transform = "translateX(10000%)";
-            physical.style.transform = "translateX(10000%)";
-            coding.style.transform = "translateX(10000%)";
-            work.style.transform = "translateX(10000%)";
-            btn1.style.color = "#000";
-            btn2.style.color = "#ff7846";
-            btn3.style.color = "#000";
-            btn4.style.color = "#000";
-            btn5.style.color = "#000";
-            btn6.style.color = "#000";
-            home.style.transitionDelay = "0s";
-            family.style.transitionDelay = "0.2s";
-            education.style.transitionDelay = "0s";
-            physical.style.transitionDelay = "0s";
-            coding.style.transitionDelay = "0s";
-            work.style.transitionDelay = "0s";
-        }
-
-        function openEducation(){
-            home.style.transform = "translateX(10000%)";
-            family.style.transform = "translateX(10000%)";
-            education.style.transform = "translateX(0)";
-            physical.style.transform = "translateX(10000%)";
-            coding.style.transform = "translateX(10000%)";
-            work.style.transform = "translateX(10000%)";
-            btn1.style.color = "#000";
-            btn2.style.color = "#000";
-            btn3.style.color = "#ff7846";
-            btn4.style.color = "#000";
-            btn5.style.color = "#000";
-            btn6.style.color = "#000";
-            home.style.transitionDelay = "0s";
-            family.style.transitionDelay = "0s";
-            education.style.transitionDelay = "0.2s";
-            physical.style.transitionDelay = "0s";
-            coding.style.transitionDelay = "0s";
-            work.style.transitionDelay = "0s";
-        }
-
-        function openPhysical(){
-            home.style.transform = "translateX(10000%)";
-            family.style.transform = "translateX(10000%)";
-            education.style.transform = "translateX(10000%)";
-            physical.style.transform = "translateX(0)";
-            coding.style.transform = "translateX(10000%)";
-            work.style.transform = "translateX(10000%)";
-            btn1.style.color = "#000";
-            btn2.style.color = "#000";
-            btn3.style.color = "#000";
-            btn4.style.color = "#ff7846";
-            btn5.style.color = "#000";
-            btn6.style.color = "#000";
-            home.style.transitionDelay = "0s";
-            family.style.transitionDelay = "0s";
-            education.style.transitionDelay = "0s";
-            physical.style.transitionDelay = "0.2s";
-            coding.style.transitionDelay = "0s";
-            work.style.transitionDelay = "0s";
-        }
-
-        function openCoding(){
-            home.style.transform = "translateX(10000%)";
-            family.style.transform = "translateX(10000%)";
-            education.style.transform = "translateX(10000%)";
-            physical.style.transform = "translateX(10000%)";
-            coding.style.transform = "translateX(0)";
-            work.style.transform = "translateX(10000%)";
-            btn1.style.color = "#000";
-            btn2.style.color = "#000";
-            btn3.style.color = "#000";
-            btn4.style.color = "#000";
-            btn5.style.color = "#ff7846";
-            btn6.style.color = "#000";
-            home.style.transitionDelay = "0s";
-            family.style.transitionDelay = "0s";
-            education.style.transitionDelay = "0s";
-            physical.style.transitionDelay = "0s";
-            coding.style.transitionDelay = "0.2s";
-            work.style.transitionDelay = "0s";
-        }
-
-        function openWork(){
-            home.style.transform = "translateX(10000%)";
-            family.style.transform = "translateX(10000%)";
-            education.style.transform = "translateX(10000%)";
-            physical.style.transform = "translateX(10000%)";
-            coding.style.transform = "translateX(10000%)";
-            work.style.transform = "translateX(0)";
-            btn1.style.color = "#000";
-            btn2.style.color = "#000";
-            btn3.style.color = "#000";
-            btn4.style.color = "#000";
-            btn5.style.color = "#000";
-            btn6.style.color = "#ff7846";
-            home.style.transitionDelay = "0s";
-            family.style.transitionDelay = "0s";
-            education.style.transitionDelay = "0s";
-            physical.style.transitionDelay = "0s";
-            coding.style.transitionDelay = "0s";
-            work.style.transitionDelay = "0.2s";
-        }
-    </script>
-
 
 
 </body>
