@@ -107,7 +107,7 @@ body{
     margin: 5px;
 }
 
-/* Specifically changing the image in the physical tab and changing the other images*/
+/* Specifically changing the image in the physical tab and not changing the other images*/
 .physical img{
     width: 600px;
 }
@@ -117,8 +117,33 @@ body{
     display: block;
 }
 
-
+/* specifically changing the width of the images in the work tab and  not changing the other images*/
 .work img{
     width: 500px;
 }
 
+/* specifically changing the links in the work tab and not changing the other links*/
+.coding a{
+    display: block;
+}
+
+/* changing the width of all pictures in the coding tab */
+.coding img{
+    width: 450px;
+}
+
+/* adding padding to the qwirkle picture */
+.qwirkle{
+    padding: 10px;
+}
+
+/* adding padding to the facet picture */
+.facet{
+    padding: 10px;
+}
+
+/* changing the enigma picture padding and height specifically and leaving other pictures alone*/
+.enigma{
+    height: 350px;
+    padding: 40px;
+}
