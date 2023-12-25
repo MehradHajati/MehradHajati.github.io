@@ -152,6 +152,12 @@ body{
     background-color: rgb(200, 0, 50);
 }
 
+/* adding hover affect to images so that the radius border changes*/
+.image:hover{
+    /*transform: scale(1.1);*/
+    border-radius: 20%;
+    transition: 1s ease;    
+}
 
 /* experiment*/
 .card{
