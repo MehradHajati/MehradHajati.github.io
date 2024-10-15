@@ -6,165 +6,40 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="script.js" defer></script>
     <title>Mehrad Hajati</title>
 </head>
 
 <body>
 
     <ul class="tabs">
-        <li data-tab-target="#home" class="active tab"><i class="fa-solid fa-house"></i>Home</li>
-        <li data-tab-target="#family" class="tab"><i class="fa-solid fa-children"></i>Family</li>
-        <li data-tab-target="#education" class="tab"><i class="fa-solid fa-school"></i>Education</li>
-        <li data-tab-target="#physical" class="tab"><i class="fa-solid fa-dumbbell"></i>Physical Activities</li>
-        <li data-tab-target="#coding" class="tab"><i class="fa-solid fa-code"></i>Coding Projects</li>
-        <li data-tab-target="#work" class="tab"><i class="fa-solid fa-briefcase"></i>Work Experience</li>
+        <li class="active tab" title="Main Page"> <a href="index.html"> <i class="fa-solid fa-house"></i> Home</a></li>
+        <li class="tab" title="Family Page"> <a href="family.html"> <i class="fa-solid fa-children"></i> Family</a></li>
+        <li class="tab" title="Education Page"><a href="education.html"> <i class="fa-solid fa-school"></i> Education</a></li>
+        <li class="tab" title="Physical Activities Page"><a href="physical.html"> <i class="fa-solid fa-dumbbell"></i> Physical Activities</a></li>
+        <li class="tab" title="Coding Projects Page"><a href="coding.html"> <i class="fa-solid fa-code"></i> Coding Projects</a></li>
+        <li class="tab" title="Work Experience Page"><a href="work.html"> <i class="fa-solid fa-briefcase"></i> Work Experience</a></li>
     </ul>
 
     <div class="tab-content">
 
-        <div id="home" data-tab-content class="active">
+        <div id="home">
             <div class="content-left">
                 <h1>Introduction</h1>
                 <p>Hello, my name is Mehrad Hajati. I was born and raised in Iran, Tehran. When I was fifteen years old I travelled to the Netherlands to get my International Baccalaureate (IB), leaving my family and friends behind.
-                After I completed my IB diploma, I travelled to Canada for my undergrad studies at Mount Allison University in Sackville, New Brunswick. I am interested in Computer Science, Math and Physics.
+                After I completed my IB diploma, I travelled to Canada for university studies. I completed my undergrad at Mount Allison University with an Honours in Computer Science and triple minor in Math, Physics, and Astrophysics. 
+                I am currently completing my masters in Computer Science focusing in Data Science at Dalhousie University. I am interested in Computer Science, Math and Physics.
                 I also enjoy going to the gym, running marathons and playing video games.
             </p>
             <p> Below are the links to my GitHub, Linkedin and Instagram: </p>
-            <a class="link" href="https://github.com/MehradHajati"> GitHub </a>
-            <a class="link" href="https://www.linkedin.com/in/mehrad-hajati-7abb26273/"> Linkedin</a>
-            <a class="link" href="https://www.instagram.com/mehrad_hajati/?hl=en"> Instagram</a>
+            <a class="link" href="https://github.com/MehradHajati" title="My Github Account"> GitHub</a>
+            <a class="link" href="https://www.linkedin.com/in/mehrad-hajati-7abb26273/" title="My LinkedIn Account"> Linkedin</a>
+            <a class="link" href="https://www.instagram.com/mehrad_hajati/?hl=en" title="My Instagram Account"> Instagram</a>
             </div>
             <div class="content-right">
-                <img class="image" src="pictures/headshot.jpg" alt="Headshot of Mehrad Hajati">
+                <img class="image" src="pictures/headshot.jpg" title="Headshot of Mehrad Hajati">
             </div>
         </div>
-
-
-        <div id="family" data-tab-content>
-            <div class="content-left">
-                <h1>Family</h1>
-                <p> The Iranian culture is very family orientated and we are taught from an early age to always be there for our family members. People will come and leave from your life, 
-                    but you only have one family and are connected with them no matter the distance. I have a brother who is 7 years older than me and my mother is the sole provider in our family.
-                    Growing up I learnt a lot from my grandfather who was a very passionate and disciplined man. He taught me that if you want something you need to work for it and no matter what happens no one can take away your accomplishments from you. 
-                    I carry his lessons with me and hope that he is proud of me.
-                </p>
-            </div>
-            <div class="content-right">
-                <img class="image" src="pictures/family1.jpg" alt="My family">
-            </div>
-        </div>
-
-
-        <div id="education" data-tab-content>
-            <div class="content-left">
-                <h1>Education</h1>
-                <p>As I said I graduated high school with an IB diploma and then came to Mount Allison University. I am currently in my last year of undergrad and
-                    will graduate from Mount Allison University with an Honours in Computer Science and a triple minor in Mathematics, Physics, and Astronomy. 
-                    I plan on pursuing a masters in Applied Computer Science, which will give me the necessary experience to become a front-end software engineer.
-                </p>
-            </div>
-            <div class="content-right">
-                <img class="image" src="pictures/graduation.jpg" alt="IB Graduation">
-            </div>
-
-        </div>
-
-
-        <div id="physical" data-tab-content>
-            <div class="content-left">
-                <h1>Physical Activities</h1>
-                <p>I am a strong believer in staying physically active. I go to the gym five days a week for strength training and run three times a week. I finished the Blue Nose half-marathon 
-                    in 1 hour and 56 minutes in the summer of 2023 in Halifax. I plan on running the Blue Nose marathon in the summer of 2024 and am currently training for it. 
-                    I can bench 225 pounds for 4 reps, can squat 315 for 2 reps, and can deadlift 365 pounds for 2 reps. 
-                </p>
-            </div>
-            <div  class="content-right physical">
-                <img class="image" src="pictures/marathon.jpg" alt="Blue Nose Half-Marathon">
-            </div>
-
-        </div>
-
-
-        <div id="coding" data-tab-content>
-            <div class="content-left coding">
-                <h1>Qwirkle</h1>
-                <p> Qwirkle is a board game played with different shaped and colored tiles, each tile has rules of where it can be placed.
-                    I turned it into a computer game that can be played over the browser by multiple people.
-                    In order to complete this project, I learned JavaScript, HTML, Gradle, and React independently using online resources.
-                    The source code can be found in this repository:
-                </p>
-                <a class="link" href="https://github.com/MehradHajati/Qwirkle"> Qwirkle</a>
-                <hr>
-
-                <h1>Enigma Machine</h1>
-                <p> One of my favorite courses during my bachelors degree was Cryptography. I found classical ciphers simple yet effective and 
-                was amazed how modern ciphers draw ideas from them to protect our data. I decided to follow my passion for classical ciphers and created 
-                the “Enigma Machine”, using the AWT and Swing packages. The Enigma Machine is a graphic user interface that explains how 
-                classical ciphers work and allows the user to enter ciphertexts or plaintexts along with appropriate keys to decrypt or encrypt them. 
-                Currently, it can encrypt and decrypt eleven ciphers. I decided on an MVC structure with this project as 
-                I found it intuitive to use and implement. The source code can be found in this repository:
-                </p>
-                <a class="link" href="https://github.com/MehradHajati/Enigma-Machine"> Enigma Machine</a>
-                <hr>
-                
-                <h1>Mandelbrot GUI</h1>
-                <p> The Mandelbrot set is two dimensional set with a relatively simple definition but great complexity as it is magnified.
-                    This project is a Graphic User Interface that allows the user to zoom in and out viewing the Mandelbrot set and its beautiful complexities.
-                    I used JavaFX to create this GUI and the code can be viewed in this repository:
-
-                </p>
-                <a class="link" href="https://github.com/MehradHajati/Mandelbrot-GUI"> Mandelbrot</a>
-                <hr>
-
-                <h1>Space Cats Fight Fascism</h1>
-                <p> In this game players can choose many characters with different abilities and can move from to
-                    different planets, completing planet specific objectives. I turned this board game into a terminal-based computer game.
-                    This project taught me the fundementals of Object-Oriented design, how to construct MVC structures, and how to test my code in JUnit.
-                    The source code can be found in this repository:
-                </p>
-                <a class="link" href="https://github.com/MehradHajati/Space-Cats-Fight-Fascism"> Space Cats</a>
-                <hr>
-
-            </div>
-            <div class="content-right coding">
-                <img class="image" src="pictures/Qwirkle.png" class="qwirkle" alt="Player's interface of Qwirkle">
-                <img class="image" src="pictures/enigma.png" class ="enigma" alt="Enigma Machine on Affine Cipher">
-                <img class="image" src="pictures/mandelbrot.png" alt="Mandelbrot GUI">
-            </div>
-
-        </div>
-
-
-        <div id="work" data-tab-content>
-            <div class="content-left work">
-                <h1>Research Assistant</h1>
-                <p>I did research with Professor Ralf Bruening at Mount Allison University during the summers of 2022 and 2023. 
-                    During the first summer, my main responsibility was to solve a geometric problem between two different data sets 
-                    from Atomic Force Microscopy (AFM) and Electron Backscatter Diffraction (EBSD), for which I created "JCube". 
-                    I created JCube using the AWT and Swing packages in Java with an MVC structure. Using R, I was able to visualize the data and present them to the research investors. 
-                    During the second summer, I started coding in C to visualize and tilt the AFM surface according to given parameters. This research ultimately lead
-                    to my honours project which will be completed by April of 2024. I presented my research during the Atlantic Undergraduate Physics
-                    and Astronomy Conference at Saint Mary's University; and again during the Canadian Undergraduate Physics Conference at Waterloo 
-                    University for professors and students. We published a paper in the Journal of Microscopy which you can find here:</p>
-                <a  class="link" href="https://onlinelibrary.wiley.com/doi/full/10.1111/jmi.13171"> Read Paper</a>
-                <hr>
-                <h1> Website Developer</h1>
-                <p> I did volunteer work for a friend's business name "CultureConnect". I created a website for them using JavaScript and Wix. Recieved the Future New Brunswick grant for my work.
-                    You can view the website here: </p>
-                <a  class="link" href="https://www.cultureconnect.ca/"> See Website</a>
-                <hr>
-                <h1> Teaching Assistant</h1>
-                <p> I have worked as a teacher's assistant for three years at Mount Allison University. I have been the teacher's assistant in Calculus II, Applied Calculus.
-                    Discrete Structures, Linear Algebra, Digital Signal Processing, and General Physics II. I learned how to communicate abstract mathematical ideas, developed my communication
-                    and social skills.
-                </p>
-
-            </div>
-            <div class="content-right work">
-                <img class="image" src="pictures/facets.jpg" class="facet" alt="Example of AFM and EBSD">
-                <img class="image" src="pictures/presenting.jpg" alt="Presenting my research at Waterloo University">
-            </div>
+        
         
     </div> 
 
